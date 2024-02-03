@@ -1,0 +1,202 @@
+/*main page*/
+.download{
+    background-color: #17a2b1;
+    width: 20%;
+    padding: 5px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    scale: .8;
+    margin-left: 39%;
+    font-family: 'Alata';
+    transition: 0.3s;
+    border-radius: 9px;
+}
+.download:hover{
+    background-color: #138793;
+    color: #dadada;
+    animation: forwards;
+}
+.welcome-message {
+    font-size: 50px;
+    color: rgb(200, 200, 210);
+    text-align: center;
+    margin-bottom: 20px;
+    position: absolute; /* set the position to absolute * /* position the div at the bottom of the page */
+    width: 100%; /* set the width to 100% */
+    bottom: 0;
+    font-family: 'Alata';
+    animation: fadeInLeft 1s ease-out;
+}
+@keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+   }
+    100% {
+      opacity: 1;
+   }
+  }
+.dropdown {
+    margin-top: -13px;
+    position: relative;
+   }
+   
+   .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: 'Alata';
+   }
+   
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+   }
+   
+   .dropdown-content a:hover {
+    background-color: #f1f1f1;
+   }
+   
+   .dropdown:hover .dropdown-content {
+    display: block;
+   }
+   
+   .dropdown:hover .dropbtn {
+    box-shadow: inset;
+   }
+   
+   .dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+   }
+   
+   .icon-bar {
+       display: block;
+       width: 22px;
+       height: 2px;
+       background-color: #fff;
+       margin: 4px 0;
+   }
+
+.h2 {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Alata';
+    display: block;
+    height: 45px;
+    color: whitesmoke;
+    background-image: linear-gradient(0deg, rgba(47,46,69,1) 0%, rgba(25,148,99,1) 22%, rgba(0,212,255,1) 93%);
+    background-size: 100% 100%;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    flex-wrap: wrap;
+}
+
+.input-box {
+    padding: 20px;
+    margin-left: 26%;
+    width: 45%;
+    margin-top: 35px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    scale: 1.1;
+    margin-left: 25%
+}
+input[type=submit] {
+    width: 20%;
+    font-family:'Lucida Sans';
+    margin-left: 40%;
+    font-weight: 200;
+}
+input[type=submit]:hover {
+    background-color: rgb(34, 141, 91);
+    color: rgb(224, 221, 221);
+    transition: 0.2s;
+}
+
+/*FAQ PAge*/
+.faq_h2 {
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Alata';
+    display: block;
+    height: 45px;
+    color: whitesmoke;
+    background-image: linear-gradient(0deg, rgba(47,46,69,1) 0%, rgba(25,148,99,1) 22%, rgba(0,212,255,1) 93%);
+    background-size: 100% 100%;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-wrap: stable;
+}
+#accordian {
+    margin-top: 1000px auto;
+    width: 600px;
+    margin-left: 25%;
+    flex-wrap: wrap;
+}
+#accordian li {
+    list-style: none;
+    width: 100%;
+    margin: 20px;
+    padding: 10px;
+    border-radius:  8px;
+    background: white;
+    filter: drop-shadow(0 0 0.65rem rgb(231, 230, 230));
+}
+#accordian li label{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 350;
+    cursor: pointer;
+    font-family: 'Alata';
+}
+label::before{
+    content:  '+';
+    margin-right: 10px;
+    font-size: 30px;
+    font-weight: 600;
+}
+input[type=checkbox]{
+    display: none;
+}
+.faq-content{
+    color: #0e0d0d;
+    padding: 0 10px;
+    line-height: 26px;
+    font-family: 'Alata';
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s, padding 0.4s;
+}
+input[type=checkbox]:checked + label + .faq-content{
+    max-height: 400px;
+    padding: 10px 10px 20px;
+}
+input[type=checkbox]:checked + label::before{
+    content: '-';
+}
